@@ -146,7 +146,7 @@ export const mockProducts: ProductItem[] = [
     trustScore: 92,
     canSell: false,
     mayNeed: true,
-    image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=300&h=200&fit=crop&auto=format",
+    image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600&auto=format&fit=crop&q=80",
   },
   {
     id: "p2",
@@ -160,7 +160,7 @@ export const mockProducts: ProductItem[] = [
     trustScore: 85,
     canSell: false,
     mayNeed: true,
-    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=300&h=200&fit=crop&auto=format",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=600&auto=format&fit=crop&q=80",
   },
   {
     id: "p3",
@@ -174,7 +174,7 @@ export const mockProducts: ProductItem[] = [
     trustScore: 79,
     canSell: true,
     mayNeed: false,
-    image: "https://images.unsplash.com/photo-1561519537-02e059ec0c15?w=300&h=200&fit=crop&auto=format",
+    image: "https://images.unsplash.com/photo-1615811361523-6bd03d7748e7?w=600&auto=format&fit=crop&q=80",
   },
   {
     id: "p4",
@@ -188,7 +188,7 @@ export const mockProducts: ProductItem[] = [
     trustScore: 91,
     canSell: true,
     mayNeed: false,
-    image: "https://images.unsplash.com/photo-1520994853571-23e6d47f3a54?w=300&h=200&fit=crop&auto=format",
+    image: "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=600&auto=format&fit=crop&q=80",
   },
   {
     id: "p5",
@@ -202,7 +202,7 @@ export const mockProducts: ProductItem[] = [
     trustScore: 88,
     canSell: false,
     mayNeed: true,
-    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=300&h=200&fit=crop&auto=format",
+    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&auto=format&fit=crop&q=80",
   },
   {
     id: "p6",
@@ -216,7 +216,7 @@ export const mockProducts: ProductItem[] = [
     trustScore: 76,
     canSell: true,
     mayNeed: false,
-    image: "https://images.unsplash.com/photo-1536054360-9a6a2c8d8c0a?w=300&h=200&fit=crop&auto=format",
+    image: "https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?w=600&auto=format&fit=crop&q=80",
   },
 ];
 

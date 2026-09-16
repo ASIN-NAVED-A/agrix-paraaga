@@ -1,7 +1,8 @@
 {
-  "description": "Generates mobile app frontends from markdown content, enabling developers to quickly create user-friendly interfaces for mobile applications.",
+  "title": "AgriX - Revolutionising Agriculture",
+  "description": "AgriX is a next-generation smart agriculture platform empowering farmers with cooperative pooling, direct marketplace, weather intelligence, and AI advisory.",
   "robots": {
-    "index": false
+    "index": true
   },
   "accessibility": {
     "addBypassLinks": false,

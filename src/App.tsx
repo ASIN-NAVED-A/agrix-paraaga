@@ -59,6 +59,27 @@ function MatchBadge({ pct }: { pct: number }) {
   );
 }
 
+function ProductImage({ src, alt, className }: { src?: string; alt: string; className?: string }) {
+  const [error, setError] = useState(false);
+  if (error || !src) {
+    return (
+      <div className={`flex flex-col items-center justify-center bg-gradient-to-br from-green-50 to-emerald-100 text-green-700 ${className || ""}`}>
+        <span className="text-xl select-none">🌾</span>
+        <span className="text-[9px] font-bold text-green-800 text-center line-clamp-1 px-1">{alt}</span>
+      </div>
+    );
+  }
+  return (
+    <img
+      src={src}
+      alt={alt}
+      loading="lazy"
+      onError={() => setError(true)}
+      className={className}
+    />
+  );
+}
+
 function FieldError({ msg }: { msg: string }) {
   return msg ? (
     <p className="text-red-500 text-xs mt-1 flex items-center gap-1 font-medium">
@@ -1420,7 +1441,7 @@ function HomeScreen({ lang, user, go }: { lang: string; user: UserProfile; go: (
             {canSell.map((p) => (
               <div key={p.id} className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden min-w-[150px] max-w-[150px] shrink-0">
                 <div className="h-20 overflow-hidden bg-gray-100">
-                  <img src={p.image} alt={p.name} className="w-full h-full object-cover" />
+                  <ProductImage src={p.image} alt={p.name} className="w-full h-full object-cover" />
                 </div>
                 <div className="p-2.5">
                   <p className="text-xs font-black text-gray-800 leading-tight">{p.name}</p>
@@ -1445,7 +1466,7 @@ function HomeScreen({ lang, user, go }: { lang: string; user: UserProfile; go: (
             {mayNeed.map((p) => (
               <div key={p.id} className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden min-w-[150px] max-w-[150px] shrink-0">
                 <div className="h-20 overflow-hidden bg-amber-50">
-                  <img src={p.image} alt={p.name} className="w-full h-full object-cover" />
+                  <ProductImage src={p.image} alt={p.name} className="w-full h-full object-cover" />
                 </div>
                 <div className="p-2.5">
                   <p className="text-xs font-black text-gray-800 leading-tight">{p.name}</p>
@@ -1556,7 +1577,7 @@ function MarketplaceScreen({ lang, go }: { lang: string; go: (s: Screen) => void
               <div key={p.id} className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
                 <div className="flex gap-3 p-3">
                   <div className="w-[88px] h-[88px] rounded-xl overflow-hidden bg-gray-100 shrink-0">
-                    <img src={p.image} alt={p.name} className="w-full h-full object-cover" />
+                    <ProductImage src={p.image} alt={p.name} className="w-full h-full object-cover" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-start justify-between gap-2">
