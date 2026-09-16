@@ -1,0 +1,10 @@
+{
+  "description": "Generates mobile app frontends from markdown content, enabling developers to quickly create user-friendly interfaces for mobile applications.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
