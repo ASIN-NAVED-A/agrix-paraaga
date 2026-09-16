@@ -1,6 +1,12 @@
 {
   "title": "AgriX - Revolutionising Agriculture",
   "description": "AgriX is a next-generation smart agriculture platform empowering farmers with cooperative pooling, direct marketplace, weather intelligence, and AI advisory.",
+  "icons": {
+    "icon": "/agrix.jpeg"
+  },
+  "openGraph": {
+    "image": "/agrix.jpeg"
+  },
   "robots": {
     "index": true
   },
